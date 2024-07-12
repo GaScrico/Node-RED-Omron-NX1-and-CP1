@@ -1,0 +1,4412 @@
+[
+    {
+        "id": "e9fa849834ed99eb",
+        "type": "tab",
+        "label": "Tutorial 1 - fluxos",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aa7ce98df1a0c712",
+        "type": "tab",
+        "label": "Página Web",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5b302dff37a689e2",
+        "type": "tab",
+        "label": "Config. connections PLCs",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0b5da3c73151f6b8",
+        "type": "tab",
+        "label": "Receive/Transmit YAPP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fb6d5d7f84b3d49d",
+        "type": "tab",
+        "label": "Dashboard YAPP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c72384865b781ffa",
+        "type": "tab",
+        "label": "Recieve/transmit CAC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d4f554bfbd91ecd9",
+        "type": "tab",
+        "label": "Dashboard CAC ST01-02",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c45f4c51225eb9be",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#096177",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#096177",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#096177",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0e9bbe",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#096177",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "supervisorio",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "none",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 5,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4a1566ab28023a03",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "997152b2f94063a7",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#0042c7",
+            "primary": "#0094ce",
+            "bgPage": "#383838",
+            "groupBg": "#8f8f8f",
+            "groupOutline": "#ffffff"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "4835a991940d49ae",
+        "type": "ui-page",
+        "name": "Supervisão ST01 & ST02",
+        "ui": "4a1566ab28023a03",
+        "path": "/page2",
+        "icon": "application",
+        "layout": "grid",
+        "theme": "997152b2f94063a7",
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "cacf1dfaa9f80d2c",
+        "type": "ui-group",
+        "name": "PROCESSOS GERAL",
+        "page": "4835a991940d49ae",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d8de9c55c2c46fd7",
+        "type": "FINS Connection",
+        "d": true,
+        "name": "NX1P-00",
+        "host": "192.168.250.1",
+        "port": "9600",
+        "MODE": "",
+        "MODEType": "NX",
+        "protocol": "",
+        "protocolType": "udp",
+        "ICF": "128",
+        "DNA": "0",
+        "DA1": "1",
+        "DA2": "0",
+        "SNA": "0",
+        "SA1": "57",
+        "SA2": "0",
+        "autoConnect": false
+    },
+    {
+        "id": "37c90c0a42da75e3",
+        "type": "ui-group",
+        "name": "RECEITA DO MATERIAL",
+        "page": "4835a991940d49ae",
+        "width": "3",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e9bb4b921dc53a19",
+        "type": "ui-group",
+        "name": "VISCOSIDADE DO MATERIAL",
+        "page": "4835a991940d49ae",
+        "width": "3",
+        "height": "1",
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "30be18f3b105a62a",
+        "type": "ui-group",
+        "name": "PROCESSOS ST01",
+        "page": "4835a991940d49ae",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "de6a407ed5952f06",
+        "type": "ui-group",
+        "name": "PROCESSOS ST02",
+        "page": "4835a991940d49ae",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5db3542c48f7d0c5",
+        "type": "MySQLdatabase",
+        "name": "mySQL",
+        "host": "localhost",
+        "port": "3306",
+        "db": "node_red_cs",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "49352fec9bd41f6f",
+        "type": "ui-group",
+        "name": "LOG DE MODIFICAÇÕES DE RECEITA",
+        "page": "4835a991940d49ae",
+        "width": "6",
+        "height": "1",
+        "order": 8,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "87839232dbefc5dc",
+        "type": "ui-group",
+        "name": "CLP ESTANQUEIDADE TES-003",
+        "page": "2e2797f41abe3a03",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2e2797f41abe3a03",
+        "type": "ui-page",
+        "name": "Configuração CLP",
+        "ui": "4a1566ab28023a03",
+        "path": "/page1",
+        "icon": "access-point",
+        "layout": "grid",
+        "theme": "997152b2f94063a7",
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "69c0a854e7c15ab9",
+        "type": "ui-group",
+        "name": "HISTORICO DE VISCOSIDADE",
+        "page": "4835a991940d49ae",
+        "width": "6",
+        "height": "1",
+        "order": 9,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "740840df535fc908",
+        "type": "ui-page",
+        "name": "Estanqueidade YAPP",
+        "ui": "4a1566ab28023a03",
+        "path": "/page3",
+        "icon": "application",
+        "layout": "grid",
+        "theme": "997152b2f94063a7",
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "4e0e143717bd7839",
+        "type": "ui-group",
+        "name": "CLP ESTANQUEIDADE TES-007",
+        "page": "2e2797f41abe3a03",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8c9e7f65155befe4",
+        "type": "ui-group",
+        "name": "CLP ESTANQUEIDADE TES-006",
+        "page": "2e2797f41abe3a03",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a852065070dd5943",
+        "type": "FINS Connection",
+        "d": true,
+        "name": "NX1P-01",
+        "host": "192.168.0.1",
+        "port": "9600",
+        "MODE": "",
+        "MODEType": "CS",
+        "protocol": "",
+        "protocolType": "udp",
+        "ICF": "128",
+        "DNA": "",
+        "DA1": "",
+        "DA2": "",
+        "SNA": "",
+        "SA1": "",
+        "SA2": "",
+        "autoConnect": false
+    },
+    {
+        "id": "31c18f8aab23e445",
+        "type": "ui-group",
+        "name": "CONFIGURAÇÕES",
+        "page": "4835a991940d49ae",
+        "width": "6",
+        "height": "1",
+        "order": 7,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "795bcb347377472c",
+        "type": "ui-group",
+        "name": "CLP ESTANQUEIDADE TES-013",
+        "page": "2e2797f41abe3a03",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9c7254d3ace63444",
+        "type": "ui-group",
+        "name": "ESTANQUEIDADE TES-003",
+        "page": "740840df535fc908",
+        "width": "3",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5add44d0c2a62480",
+        "type": "ui-group",
+        "name": "TESTE DE ESTANQUEIDADE TES-006",
+        "page": "740840df535fc908",
+        "width": "3",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "079627dc96d3aa56",
+        "type": "ui-group",
+        "name": "ESTANQUEIDADE TES-007",
+        "page": "740840df535fc908",
+        "width": "3",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a0c7341a1436600a",
+        "type": "ui-group",
+        "name": "ESTANQUEIDADE TES-013",
+        "page": "740840df535fc908",
+        "width": "3",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "59fbdf9005b247a3",
+        "type": "ui-group",
+        "name": "TESTE",
+        "page": "740840df535fc908",
+        "width": "12",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0c46ca994638e8c4",
+        "type": "ui-page",
+        "name": "Page 4",
+        "ui": "4a1566ab28023a03",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "997152b2f94063a7",
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "93577341c8a946bc",
+        "type": "FINS Connection",
+        "name": "CP1 TES-003",
+        "host": "192.168.250.1",
+        "port": "9600",
+        "MODE": "",
+        "MODEType": "CP",
+        "protocol": "",
+        "protocolType": "tcp",
+        "ICF": "128",
+        "DNA": "",
+        "DA1": "1",
+        "DA2": "",
+        "SNA": "",
+        "SA1": "57",
+        "SA2": "",
+        "autoConnect": false
+    },
+    {
+        "id": "066c896857f20e37",
+        "type": "ui-group",
+        "name": "ANÀLISE GRÁFICA",
+        "page": "4835a991940d49ae",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2d90cd0d983001e1",
+        "type": "debug",
+        "z": "e9fa849834ed99eb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5dcdf6cfd50db836",
+        "type": "inject",
+        "z": "e9fa849834ed99eb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "88d34c501df00e70",
+                "9a24c0b2f03d0d1b"
+            ]
+        ]
+    },
+    {
+        "id": "88d34c501df00e70",
+        "type": "function",
+        "z": "e9fa849834ed99eb",
+        "name": "function 1",
+        "func": "// Create a Date object from the payload\nvar date = new Date(msg.payload);\n// Change the payload to be a formatted Date string\nmsg.payload = date.toString();\n// Return the message so it can be sent on\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "2d90cd0d983001e1"
+            ]
+        ]
+    },
+    {
+        "id": "9a24c0b2f03d0d1b",
+        "type": "http request",
+        "z": "e9fa849834ed99eb",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.csv",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "12095f87f1d4905f"
+            ]
+        ]
+    },
+    {
+        "id": "12095f87f1d4905f",
+        "type": "csv",
+        "z": "e9fa849834ed99eb",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "242b5f08172ff4ae",
+                "e4b50a94b38f4aa1"
+            ]
+        ]
+    },
+    {
+        "id": "242b5f08172ff4ae",
+        "type": "switch",
+        "z": "e9fa849834ed99eb",
+        "name": "",
+        "property": "payload.mag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "ac0aae2a19390970"
+            ]
+        ]
+    },
+    {
+        "id": "ac0aae2a19390970",
+        "type": "change",
+        "z": "e9fa849834ed99eb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"PANIC\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "12186937f2cfeda1"
+            ]
+        ]
+    },
+    {
+        "id": "12186937f2cfeda1",
+        "type": "debug",
+        "z": "e9fa849834ed99eb",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e4b50a94b38f4aa1",
+        "type": "debug",
+        "z": "e9fa849834ed99eb",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "07890a035f0b7b11",
+        "type": "http in",
+        "z": "aa7ce98df1a0c712",
+        "name": "",
+        "url": "/osmanutencao",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "4b74d0490a745d6e"
+            ]
+        ]
+    },
+    {
+        "id": "4b74d0490a745d6e",
+        "type": "template",
+        "z": "aa7ce98df1a0c712",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n\n<head>\n    <title>WebPage Node-RED</title>\n\n    <h1>Página da manutenção</h1>\n</head>\n\n<body>\n\n    <p> Demonstração do dashboard </p>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "6d78f5f2db190d9e"
+            ]
+        ]
+    },
+    {
+        "id": "6d78f5f2db190d9e",
+        "type": "http response",
+        "z": "aa7ce98df1a0c712",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "057c6d0adda91c58",
+        "type": "inject",
+        "z": "aa7ce98df1a0c712",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "b6926f8440a753f1"
+            ]
+        ]
+    },
+    {
+        "id": "b6926f8440a753f1",
+        "type": "debug",
+        "z": "aa7ce98df1a0c712",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f76a64f10fc02ac2",
+        "type": "comment",
+        "z": "aa7ce98df1a0c712",
+        "name": "Página da web padrão HTML",
+        "info": "",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c2ce0e0ba4f66be3",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "CP1",
+        "connection": "93577341c8a946bc",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "none",
+        "connectOptions": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "disconnect",
+        "command": "",
+        "x": 350,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d2bcf02698bbbc0",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "87839232dbefc5dc",
+        "name": "",
+        "label": "Desconectar",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Desconnected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "c2ce0e0ba4f66be3",
+                "9f483cad016308a9"
+            ]
+        ]
+    },
+    {
+        "id": "868229ef1b9c7b5b",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "87839232dbefc5dc",
+        "name": "",
+        "label": "Conectar",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Connected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "81874ccbb4441f6c"
+            ]
+        ]
+    },
+    {
+        "id": "9f483cad016308a9",
+        "type": "ui-text",
+        "z": "5b302dff37a689e2",
+        "group": "87839232dbefc5dc",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 850,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "81874ccbb4441f6c",
+        "type": "function",
+        "z": "5b302dff37a689e2",
+        "name": "function 2",
+        "func": "msg.options = {\n  \"protocol\" : \"tcp\", //udp or tcp\n  \"MODE\" : \"CP\",     //CP, CV, CS, CJ, NJ, NX\n  \"host\" : \"192.168.250.1\" ,     //IP or hostname\n  \"port\" : 9600,     //udp/tcp port number e.g. 9600\n  \"DNA\" : 0,      //Dest Network Number\n  \"DA1\" : 1,      //Dest Node Number \n  \"DA2\" : 0,      //Dest Unit Number \n  \"SNA\" : 0,      //Source Network Number \n  \"SA1\" : 57,      //Source Node Number \n  \"SA2\" : 0,      //Source Unit Number\n  timeout: 1000  //timeout in milliseconds\n} ;\nmsg.topic = \"connect\" ;\nmsg.stat = \"connected\" ;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "9f483cad016308a9"
+            ]
+        ]
+    },
+    {
+        "id": "17e91ee76326d9cf",
+        "type": "comment",
+        "z": "5b302dff37a689e2",
+        "name": "CONEXÃO CLP1 TES-003",
+        "info": "",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5fc4651f35dfaa40",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "NX",
+        "connection": "a852065070dd5943",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "none",
+        "connectOptions": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "disconnect",
+        "command": "",
+        "x": 350,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0f6767218bbe6e0",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "",
+        "connection": "d8de9c55c2c46fd7",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "msg",
+        "connectOptions": "options",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "connect",
+        "command": "",
+        "x": 620,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6924a7c99704fcb8",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "4e0e143717bd7839",
+        "name": "",
+        "label": "Desconectar",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Desconnected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 580,
+        "wires": [
+            [
+                "5fc4651f35dfaa40",
+                "ff294bdf06b2df69"
+            ]
+        ]
+    },
+    {
+        "id": "d647bfe37dc22ea2",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "4e0e143717bd7839",
+        "name": "",
+        "label": "Conectar",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Connected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 660,
+        "wires": [
+            [
+                "399a947fd0ccdbf5"
+            ]
+        ]
+    },
+    {
+        "id": "ff294bdf06b2df69",
+        "type": "ui-text",
+        "z": "5b302dff37a689e2",
+        "group": "4e0e143717bd7839",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "399a947fd0ccdbf5",
+        "type": "function",
+        "z": "5b302dff37a689e2",
+        "name": "function 4",
+        "func": "msg.options = {\n  \"protocol\" : \"udp\", //udp or tcp\n  \"MODE\" : \"NX\",     //CP, CV, CS, CJ, NJ, NX\n  \"host\" : \"192.168.250.1\" ,     //IP or hostname\n  \"port\" : 9600,     //udp/tcp port number e.g. 9600\n  \"DNA\" : 0,      //Dest Network Number\n  \"DA1\" : 1,      //Dest Node Number \n  \"DA2\" : 0,      //Dest Unit Number \n  \"SNA\" : 0,      //Source Network Number \n  \"SA1\" : 57,      //Source Node Number \n  \"SA2\" : 0,      //Source Unit Number\n  timeout: 1000  //timeout in milliseconds\n} ;\nmsg.topic = \"connect\" ;\nmsg.stat = \"connected\" ;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "b0f6767218bbe6e0",
+                "ff294bdf06b2df69"
+            ]
+        ]
+    },
+    {
+        "id": "7e56a6f7a9b057cd",
+        "type": "comment",
+        "z": "5b302dff37a689e2",
+        "name": "CONEXÃO CLP2 TES-007",
+        "info": "",
+        "x": 130,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "64fdd4fd858dfdc4",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "NX",
+        "connection": "d8de9c55c2c46fd7",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "none",
+        "connectOptions": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "disconnect",
+        "command": "",
+        "x": 350,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47a8bf51f014d983",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "",
+        "connection": "d8de9c55c2c46fd7",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "msg",
+        "connectOptions": "options",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "connect",
+        "command": "",
+        "x": 620,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "717bec2ce9036cd3",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "8c9e7f65155befe4",
+        "name": "",
+        "label": "Desconectar",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Desconnected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 780,
+        "wires": [
+            [
+                "64fdd4fd858dfdc4",
+                "32f6c95a234681e7"
+            ]
+        ]
+    },
+    {
+        "id": "4dfa95ba7f48de87",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "8c9e7f65155befe4",
+        "name": "",
+        "label": "Conectar",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Connected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 860,
+        "wires": [
+            [
+                "624b58a95d26125b"
+            ]
+        ]
+    },
+    {
+        "id": "32f6c95a234681e7",
+        "type": "ui-text",
+        "z": "5b302dff37a689e2",
+        "group": "8c9e7f65155befe4",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 850,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "624b58a95d26125b",
+        "type": "function",
+        "z": "5b302dff37a689e2",
+        "name": "function 5",
+        "func": "msg.options = {\n  \"protocol\" : \"udp\", //udp or tcp\n  \"MODE\" : \"NX\",     //CP, CV, CS, CJ, NJ, NX\n  \"host\" : \"192.168.250.1\" ,     //IP or hostname\n  \"port\" : 9600,     //udp/tcp port number e.g. 9600\n  \"DNA\" : 0,      //Dest Network Number\n  \"DA1\" : 1,      //Dest Node Number \n  \"DA2\" : 0,      //Dest Unit Number \n  \"SNA\" : 0,      //Source Network Number \n  \"SA1\" : 57,      //Source Node Number \n  \"SA2\" : 0,      //Source Unit Number\n  timeout: 1000  //timeout in milliseconds\n} ;\nmsg.topic = \"connect\" ;\nmsg.stat = \"connected\" ;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 860,
+        "wires": [
+            [
+                "47a8bf51f014d983",
+                "32f6c95a234681e7"
+            ]
+        ]
+    },
+    {
+        "id": "8e5fa79149f93bcd",
+        "type": "comment",
+        "z": "5b302dff37a689e2",
+        "name": "CONEXÃO CLP3 TES-006",
+        "info": "",
+        "x": 130,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e01e744d0d813ff2",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "NX",
+        "connection": "d8de9c55c2c46fd7",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "none",
+        "connectOptions": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "disconnect",
+        "command": "",
+        "x": 350,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bbf2c3b044c9ce1",
+        "type": "FINS Control",
+        "z": "5b302dff37a689e2",
+        "name": "",
+        "connection": "d8de9c55c2c46fd7",
+        "clockType": "msg",
+        "clock": "clock",
+        "connectOptionsType": "msg",
+        "connectOptions": "options",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "commandType": "connect",
+        "command": "",
+        "x": 620,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb0a9fe4f9c6c857",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "795bcb347377472c",
+        "name": "",
+        "label": "Desconectar",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Desconnected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 980,
+        "wires": [
+            [
+                "e01e744d0d813ff2",
+                "97b7ec3113d4817b"
+            ]
+        ]
+    },
+    {
+        "id": "2c9cab159a064226",
+        "type": "ui-button",
+        "z": "5b302dff37a689e2",
+        "group": "795bcb347377472c",
+        "name": "",
+        "label": "Conectar",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Connected",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 1060,
+        "wires": [
+            [
+                "76f354daafbec0ad"
+            ]
+        ]
+    },
+    {
+        "id": "97b7ec3113d4817b",
+        "type": "ui-text",
+        "z": "5b302dff37a689e2",
+        "group": "795bcb347377472c",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 850,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "76f354daafbec0ad",
+        "type": "function",
+        "z": "5b302dff37a689e2",
+        "name": "function 7",
+        "func": "msg.options = {\n  \"protocol\" : \"udp\", //udp or tcp\n  \"MODE\" : \"NX\",     //CP, CV, CS, CJ, NJ, NX\n  \"host\" : \"192.168.250.1\" ,     //IP or hostname\n  \"port\" : 9600,     //udp/tcp port number e.g. 9600\n  \"DNA\" : 0,      //Dest Network Number\n  \"DA1\" : 1,      //Dest Node Number \n  \"DA2\" : 0,      //Dest Unit Number \n  \"SNA\" : 0,      //Source Network Number \n  \"SA1\" : 57,      //Source Node Number \n  \"SA2\" : 0,      //Source Unit Number\n  timeout: 1000  //timeout in milliseconds\n} ;\nmsg.topic = \"connect\" ;\nmsg.stat = \"connected\" ;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1060,
+        "wires": [
+            [
+                "3bbf2c3b044c9ce1",
+                "97b7ec3113d4817b"
+            ]
+        ]
+    },
+    {
+        "id": "3db89767aa3dc717",
+        "type": "comment",
+        "z": "5b302dff37a689e2",
+        "name": "CONEXÃO CLP4 - TES013",
+        "info": "",
+        "x": 140,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "a29d626ccc8cdb08",
+        "type": "inject",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "a2601e3d287e31a7",
+                "f3bd2b2a523038d2",
+                "a211fadefb30a9e1",
+                "dec5631fd540bcb6"
+            ]
+        ]
+    },
+    {
+        "id": "a2601e3d287e31a7",
+        "type": "FINS Read",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "connection": "93577341c8a946bc",
+        "addressType": "str",
+        "address": "D25",
+        "countType": "num",
+        "count": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "outputFormatType": "signed",
+        "outputFormat": "",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "097f36b6348662eb"
+            ]
+        ]
+    },
+    {
+        "id": "097f36b6348662eb",
+        "type": "change",
+        "z": "0b5da3c73151f6b8",
+        "name": "global.POK_TES003",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload[0]",
+                "pt": "msg",
+                "to": "POK_TES003",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b931151330902245",
+        "type": "comment",
+        "z": "0b5da3c73151f6b8",
+        "name": "Recebimento YAPP TES-003",
+        "info": "",
+        "x": 160,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4086629b771ecd2d",
+        "type": "change",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.PN",
+                "pt": "msg",
+                "to": "PN_TES003",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3bd2b2a523038d2",
+        "type": "FINS Read Multiple",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "connection": "93577341c8a946bc",
+        "addressType": "str",
+        "address": "D10000,D10001,D10002,D10003,D10004,D10005,D10006",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "outputFormatType": "signed",
+        "outputFormat": "",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            [
+                "7bd1f50f687660ca"
+            ]
+        ]
+    },
+    {
+        "id": "7bd1f50f687660ca",
+        "type": "buffer-parser",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "ascii",
+                "name": "PN",
+                "offset": 0,
+                "length": 10,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 690,
+        "y": 60,
+        "wires": [
+            [
+                "4086629b771ecd2d"
+            ]
+        ]
+    },
+    {
+        "id": "a211fadefb30a9e1",
+        "type": "FINS Read",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "connection": "93577341c8a946bc",
+        "addressType": "str",
+        "address": "D27",
+        "countType": "num",
+        "count": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "outputFormatType": "signed",
+        "outputFormat": "",
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "82fca3313f9869e6"
+            ]
+        ]
+    },
+    {
+        "id": "82fca3313f9869e6",
+        "type": "change",
+        "z": "0b5da3c73151f6b8",
+        "name": "global.PNOK_TES003",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload[0]",
+                "pt": "msg",
+                "to": "PNOK_TES003",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dec5631fd540bcb6",
+        "type": "FINS Read",
+        "z": "0b5da3c73151f6b8",
+        "name": "",
+        "connection": "93577341c8a946bc",
+        "addressType": "str",
+        "address": "W51",
+        "countType": "num",
+        "count": "",
+        "msgPropertyType": "msg",
+        "msgProperty": "payload",
+        "outputFormatType": "signed",
+        "outputFormat": "",
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "8ba78b22f16c9721"
+            ]
+        ]
+    },
+    {
+        "id": "8ba78b22f16c9721",
+        "type": "change",
+        "z": "0b5da3c73151f6b8",
+        "name": "global.PPHR_TES003",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload[0]",
+                "pt": "msg",
+                "to": "PPHR_TES003",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bab7e2c344a57fdf",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PN_TES003",
+        "payloadType": "global",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "295c8736717854cb"
+            ]
+        ]
+    },
+    {
+        "id": "663204b81cacebd5",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS POR HORA",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 860,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9d2e9f7409842e01",
+        "type": "comment",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "PAINEL TES-003 ",
+        "info": "",
+        "x": 100,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7c3dc6e4961bc9b3",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS OK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5d02e76454a125e7",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS NOK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 890,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "797ac5903678b460",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TEMPO TOTAL DE PRODUÇÃO ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 860,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a33f4b14bd8f9f74",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "POK_TES003",
+        "payloadType": "global",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "7c3dc6e4961bc9b3"
+            ]
+        ]
+    },
+    {
+        "id": "9cab5a2e4e1afb1a",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4623510123",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1140,
+        "wires": [
+            [
+                "fb8af69d2ea2bf11"
+            ]
+        ]
+    },
+    {
+        "id": "fb8af69d2ea2bf11",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PEÇA EM PRODUÇÃO",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "17",
+        "color": "#0000ff",
+        "className": "",
+        "x": 630,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "3df701606712351b",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS POR HORA",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 680,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "214d2aaa3c4683c2",
+        "type": "comment",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "PAINEL TES-007",
+        "info": "",
+        "x": 100,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "60ef73de49af61e1",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1180,
+        "wires": [
+            [
+                "3df701606712351b"
+            ]
+        ]
+    },
+    {
+        "id": "f3615318eda5ad09",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS OK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 650,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "458b9f6652a9ef16",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS NOK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 650,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "a6240e90a67478aa",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TEMPO TOTAL DE PRODUÇÃO ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 660,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "30cc18ec433fec83",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4623510123",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1480,
+        "wires": [
+            [
+                "15afeaee08d09a2d"
+            ]
+        ]
+    },
+    {
+        "id": "15afeaee08d09a2d",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PEÇA EM PRODUÇÃO",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "17",
+        "color": "#0000ff",
+        "className": "",
+        "x": 650,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "2b35c0962accefde",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS POR HORA",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 700,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "e0243deb044ca6a6",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1520,
+        "wires": [
+            [
+                "2b35c0962accefde"
+            ]
+        ]
+    },
+    {
+        "id": "6b2128f2a79798f8",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS OK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 670,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "e896ecf6d7a9761c",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS NOK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 670,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "4d05a76815ce9c6c",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TEMPO TOTAL DE PRODUÇÃO ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 680,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "d4f562974eca6b49",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1560,
+        "wires": [
+            [
+                "6b2128f2a79798f8"
+            ]
+        ]
+    },
+    {
+        "id": "fa55cb3cc714b628",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1600,
+        "wires": [
+            [
+                "e896ecf6d7a9761c"
+            ]
+        ]
+    },
+    {
+        "id": "0be0b564d7eedaf7",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1640,
+        "wires": [
+            [
+                "4d05a76815ce9c6c"
+            ]
+        ]
+    },
+    {
+        "id": "697f559b224016a4",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4623510123",
+        "payloadType": "str",
+        "x": 130,
+        "y": 840,
+        "wires": [
+            [
+                "dbe9662b67f9c75c"
+            ]
+        ]
+    },
+    {
+        "id": "dbe9662b67f9c75c",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PEÇA EM PRODUÇÃO",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "17",
+        "color": "#0000ff",
+        "className": "",
+        "x": 630,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "142a75b9c053c7db",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS POR HORA",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 680,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "428429edce91e017",
+        "type": "comment",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "PAINEL TES-006",
+        "info": "",
+        "x": 100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "4fc108e7d5774816",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 880,
+        "wires": [
+            [
+                "142a75b9c053c7db"
+            ]
+        ]
+    },
+    {
+        "id": "ebc49b053f37f4cb",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS OK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 650,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ce941b560b13d830",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "QUANTIDADE DE PEÇAS NOK",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 650,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b7e9a1517e16d0da",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TEMPO TOTAL DE PRODUÇÃO ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 660,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "8becdd8fb4d9eaad",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 920,
+        "wires": [
+            [
+                "ebc49b053f37f4cb"
+            ]
+        ]
+    },
+    {
+        "id": "25cf48e93ec9331e",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 960,
+        "wires": [
+            [
+                "ce941b560b13d830"
+            ]
+        ]
+    },
+    {
+        "id": "8f988bb39874ec5e",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1000,
+        "wires": [
+            [
+                "b7e9a1517e16d0da"
+            ]
+        ]
+    },
+    {
+        "id": "2ac51a5dc7cd1773",
+        "type": "comment",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "PAINEL TES-0013",
+        "info": "",
+        "x": 130,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "c1ae50b053aa6692",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1260,
+        "wires": [
+            [
+                "458b9f6652a9ef16"
+            ]
+        ]
+    },
+    {
+        "id": "f321be7cc0bb7d73",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1300,
+        "wires": [
+            [
+                "a6240e90a67478aa"
+            ]
+        ]
+    },
+    {
+        "id": "d51f157bf1c1edb0",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1220,
+        "wires": [
+            [
+                "f3615318eda5ad09"
+            ]
+        ]
+    },
+    {
+        "id": "661780eace053662",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PNOK_TES003",
+        "payloadType": "global",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "5d02e76454a125e7"
+            ]
+        ]
+    },
+    {
+        "id": "a4d2ba04229e2a39",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PPHR_TES003",
+        "payloadType": "global",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "663204b81cacebd5"
+            ]
+        ]
+    },
+    {
+        "id": "295c8736717854cb",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "PEÇA EM PRODUÇÂO ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "17",
+        "color": "#0400ff",
+        "className": "",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "521d37c1ed5ca111",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "9c7254d3ace63444",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "_________________________________________________",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 440,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3e4b2b915fb13b97",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "5add44d0c2a62480",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "_________________________________________________",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 440,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "182746605113b104",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "079627dc96d3aa56",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "_________________________________________________",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 440,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ba8c43d3bdcea293",
+        "type": "ui-text",
+        "z": "fb6d5d7f84b3d49d",
+        "group": "a0c7341a1436600a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "_________________________________________________",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 480,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "e789408cfc6c8476",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "```mermaid {{ msg.payload }} ```",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e7d2b0cf5a5290b",
+        "type": "function",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "function 9",
+        "func": "context.global.start_time = new Date().getTime();\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "868a52507c102960",
+                "797ac5903678b460"
+            ]
+        ]
+    },
+    {
+        "id": "868a52507c102960",
+        "type": "debug",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "63a932707f7a5855",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "Start_time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "3e7d2b0cf5a5290b"
+            ]
+        ]
+    },
+    {
+        "id": "d56151546844feb0",
+        "type": "function",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "function 13",
+        "func": "var current_time = new Date().getTime();\nvar time_elapse = (current_time-context.global.start_time);\nmsg.payload = \"time_lapse\"+ time_elapse +\"ms\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "868a52507c102960"
+            ]
+        ]
+    },
+    {
+        "id": "e2fef893764dece5",
+        "type": "inject",
+        "z": "fb6d5d7f84b3d49d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "d56151546844feb0"
+            ]
+        ]
+    },
+    {
+        "id": "b462c56c5595f309",
+        "type": "ui-slider",
+        "z": "c72384865b781ffa",
+        "group": "cacf1dfaa9f80d2c",
+        "name": "Simulador",
+        "label": "Simulador temp entrada",
+        "tooltip": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "ebfbdd8cd860c324"
+            ]
+        ]
+    },
+    {
+        "id": "ebfbdd8cd860c324",
+        "type": "change",
+        "z": "c72384865b781ffa",
+        "name": "move to global",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp_entrada_agua_chiller",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a01a48dd520614e",
+        "type": "change",
+        "z": "c72384865b781ffa",
+        "name": "move to global",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp_saida_agua_chiller",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4189eba47b3c2d9c",
+        "type": "ui-slider",
+        "z": "c72384865b781ffa",
+        "group": "cacf1dfaa9f80d2c",
+        "name": "Simulador",
+        "label": "Simulador temp saida",
+        "tooltip": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "6a01a48dd520614e"
+            ]
+        ]
+    },
+    {
+        "id": "db691a9091a2f0e3",
+        "type": "comment",
+        "z": "d4f554bfbd91ecd9",
+        "name": "GAUGES MEDIÇÔES",
+        "info": "",
+        "x": 120,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "edeed9184d4f10d1",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Temperatura de entrada - água Chiller",
+        "group": "cacf1dfaa9f80d2c",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Entrada água Chiller",
+        "units": "ºC",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 850,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4efa4721d5d09236",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Temperatura de saída - água Chiller",
+        "group": "cacf1dfaa9f80d2c",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Saída Água chiller",
+        "units": "ºC",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 840,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ca517767d2145d30",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Temperatura termoregulador ST01",
+        "group": "30be18f3b105a62a",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Termoregulador ST01",
+        "units": "ºC",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 840,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "32b60169157d48cd",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_entrada_agua_chiller",
+        "payloadType": "global",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "aa61edb458da6e54",
+                "edeed9184d4f10d1"
+            ]
+        ]
+    },
+    {
+        "id": "17a7466dda480262",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Temperatura termoregulador ST02",
+        "group": "de6a407ed5952f06",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Termoregulador ST02",
+        "units": "ºC",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 840,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "77763d4a73f9561a",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Pressão bomba de vácuo ST01",
+        "group": "30be18f3b105a62a",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Pressão bomba de vácuo ST01",
+        "units": "Bar",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 830,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cb7b90fcd22d0971",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Pressão bomba de vácuo ST02",
+        "group": "de6a407ed5952f06",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Pressão bomba de vácuo ST02",
+        "units": "Bar",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e9d72e6911f1d99d",
+        "type": "debug",
+        "z": "d4f554bfbd91ecd9",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ef02adbecc1fee6e",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "37c90c0a42da75e3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Material Moido",
+        "label": "Material moido",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 860,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "dc32e17bc7c874bc",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "37c90c0a42da75e3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Material Virgem",
+        "label": "Material virgem",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 860,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "1d20db43514680a0",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Temperatura saída Blue Air",
+        "group": "cacf1dfaa9f80d2c",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura saída Blue Air",
+        "units": "ºC",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 820,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3fc13f18e7be962e",
+        "type": "ui-gauge",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Pressão saída Blue air",
+        "group": "cacf1dfaa9f80d2c",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Pressão saída Blue air",
+        "units": "Bar",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00ff00"
+            },
+            {
+                "from": "20",
+                "color": "#c5dc18"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "60",
+                "color": "#f66504"
+            },
+            {
+                "from": "80",
+                "color": "#ff0000"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 800,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d7c774e32673a79d",
+        "type": "change",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[\"material virgem\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "47597a11a933c2c7"
+            ]
+        ]
+    },
+    {
+        "id": "fadfbe8dcd472f85",
+        "type": "change",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[\"material moido\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 740,
+        "wires": [
+            [
+                "47c5eb985f04b2c4"
+            ]
+        ]
+    },
+    {
+        "id": "6a1ab025e15f6889",
+        "type": "ui-form",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Input de dados Viscosidade",
+        "group": "e9bb4b921dc53a19",
+        "label": "DADOS VISCOSIDADE MATERIAL",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "VISCOSIDADE",
+                "key": "viscosidade",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "viscosidade": ""
+        },
+        "payload": "",
+        "submit": "Salvar",
+        "cancel": "Apagar",
+        "resetOnSubmit": false,
+        "topic": "payload",
+        "topicType": "str",
+        "splitLayout": true,
+        "className": "",
+        "x": 140,
+        "y": 840,
+        "wires": [
+            [
+                "0c60dfa4eef6aaac",
+                "482ed6cb01cc49e2"
+            ]
+        ]
+    },
+    {
+        "id": "65bd61c898ecd4f7",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "e9bb4b921dc53a19",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "viscosidade",
+        "label": "Viscosidade",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 870,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "0c60dfa4eef6aaac",
+        "type": "change",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[\"viscosidade\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 840,
+        "wires": [
+            [
+                "c77a184167b275ad"
+            ]
+        ]
+    },
+    {
+        "id": "5c0cabcbde471097",
+        "type": "mysql",
+        "z": "d4f554bfbd91ecd9",
+        "mydb": "5db3542c48f7d0c5",
+        "name": "sql node red",
+        "x": 870,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d29dd35a768907cb",
+        "type": "debug",
+        "z": "d4f554bfbd91ecd9",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "b5382524630e4065",
+        "type": "ui-table",
+        "z": "d4f554bfbd91ecd9",
+        "group": "49352fec9bd41f6f",
+        "name": "Log de modificações",
+        "label": "text",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": "10",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "selectionType": "none",
+        "columns": [],
+        "x": 840,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a83cc2c0d4d50f7",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "MOLDE ATUAL ST01",
+        "label": "MOLDE ATUAL ST01",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 840,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d32e55278a20e9de",
+        "type": "comment",
+        "z": "d4f554bfbd91ecd9",
+        "name": "FORMULÁRIO % MATERIAL VIRGEM X MOIDO",
+        "info": "",
+        "x": 240,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7cd8b685e6aad617",
+        "type": "comment",
+        "z": "d4f554bfbd91ecd9",
+        "name": "FORMULÁRIO DE VISCOSIDADE",
+        "info": "",
+        "x": 200,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "aa61edb458da6e54",
+        "type": "debug",
+        "z": "d4f554bfbd91ecd9",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "482ed6cb01cc49e2",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 3",
+        "func": "var viscosidade = msg.payload.viscosidade\nvar materialvirgem = msg.payload[\"material virgem\"]\nvar materialmoido = msg.payload[\"material moido\"]\n\n\nmsg.payload = {}\n\nmsg.topic = \"insert into dados_receita (id,Mvirgem,Mmoido,rastreio) value (NULL,\" + materialvirgem + \",\" + materialmoido +\",now());\"\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1040,
+        "wires": [
+            [
+                "d29dd35a768907cb",
+                "5c0cabcbde471097"
+            ]
+        ]
+    },
+    {
+        "id": "98f458dd3edd7549",
+        "type": "mysql",
+        "z": "d4f554bfbd91ecd9",
+        "mydb": "5db3542c48f7d0c5",
+        "name": "sql node red",
+        "x": 290,
+        "y": 1300,
+        "wires": [
+            [
+                "d57831120284326a"
+            ]
+        ]
+    },
+    {
+        "id": "46a4fd26b15326f4",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM node_red_cs.dados_receita;",
+        "x": 100,
+        "y": 1300,
+        "wires": [
+            [
+                "98f458dd3edd7549"
+            ]
+        ]
+    },
+    {
+        "id": "47597a11a933c2c7",
+        "type": "template",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload}}%",
+        "output": "str",
+        "x": 640,
+        "y": 660,
+        "wires": [
+            [
+                "dc32e17bc7c874bc"
+            ]
+        ]
+    },
+    {
+        "id": "47c5eb985f04b2c4",
+        "type": "template",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload}}%",
+        "output": "str",
+        "x": 640,
+        "y": 740,
+        "wires": [
+            [
+                "ef02adbecc1fee6e"
+            ]
+        ]
+    },
+    {
+        "id": "c77a184167b275ad",
+        "type": "template",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload}}%",
+        "output": "str",
+        "x": 700,
+        "y": 840,
+        "wires": [
+            [
+                "65bd61c898ecd4f7"
+            ]
+        ]
+    },
+    {
+        "id": "d6dd5cfe0cef6a7e",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 6",
+        "func": "\nmsg.payload = {}\n\nmsg.topic = \"TRUNCATE TABLE dados_receita;\"\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1220,
+        "wires": [
+            [
+                "5c0cabcbde471097",
+                "d29dd35a768907cb"
+            ]
+        ]
+    },
+    {
+        "id": "a167305661a3d270",
+        "type": "ui-button",
+        "z": "d4f554bfbd91ecd9",
+        "group": "49352fec9bd41f6f",
+        "name": "",
+        "label": "APAGAR DADOS",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 1200,
+        "wires": [
+            [
+                "d6dd5cfe0cef6a7e"
+            ]
+        ]
+    },
+    {
+        "id": "d621120b4c37d03e",
+        "type": "ui-form",
+        "z": "d4f554bfbd91ecd9",
+        "name": "Input de dados receita %",
+        "group": "37c90c0a42da75e3",
+        "label": "DADOS RECEITA MATERIAL",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "0 - 100%",
+                "key": "material virgem",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "0 - 100%",
+                "key": "material moido",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "material virgem": "",
+            "material moido": ""
+        },
+        "payload": "",
+        "submit": "Salvar",
+        "cancel": "Apagar",
+        "resetOnSubmit": false,
+        "topic": "msg.payload",
+        "topicType": "str",
+        "splitLayout": true,
+        "className": "",
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "d7c774e32673a79d",
+                "fadfbe8dcd472f85",
+                "e9d72e6911f1d99d",
+                "482ed6cb01cc49e2"
+            ]
+        ]
+    },
+    {
+        "id": "601640ffce72b06b",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "MOLDE ATUAL ST02",
+        "label": "MOLDE ATUAL ST02",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 840,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d876dffdca05ed3c",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "MOLDE ATUAL ST01",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 840,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2796a71fe2d7be69",
+        "type": "ui-text",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "MOLDE ATUAL ST02",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 840,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "6dd68900e6297c72",
+        "type": "ui-dropdown",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "name": "",
+        "label": "SETUP ST01 :",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "BSUV-98/99",
+                "value": "20034554",
+                "type": "str"
+            },
+            {
+                "label": "BSUV-44/45",
+                "value": "20034555",
+                "type": "str"
+            },
+            {
+                "label": "BCAR-35",
+                "value": "20034556",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 460,
+        "y": 880,
+        "wires": [
+            [
+                "d876dffdca05ed3c",
+                "b201052978bc100b"
+            ]
+        ]
+    },
+    {
+        "id": "88826e1eb25596f2",
+        "type": "ui-dropdown",
+        "z": "d4f554bfbd91ecd9",
+        "group": "31c18f8aab23e445",
+        "name": "",
+        "label": "SETUP ST02 :",
+        "tooltip": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "BSUV-98/99",
+                "value": "20034554",
+                "type": "str"
+            },
+            {
+                "label": "BSUV-44/45",
+                "value": "20034555",
+                "type": "str"
+            },
+            {
+                "label": "BCAR-35",
+                "value": "20034556",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 460,
+        "y": 960,
+        "wires": [
+            [
+                "2796a71fe2d7be69",
+                "b201052978bc100b"
+            ]
+        ]
+    },
+    {
+        "id": "d57831120284326a",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 11",
+        "func": "\nreturn msg\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1300,
+        "wires": [
+            [
+                "b5382524630e4065"
+            ]
+        ]
+    },
+    {
+        "id": "b201052978bc100b",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 12",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f9acde3cc1401ec",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_saida_agua_chiller",
+        "payloadType": "global",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "4efa4721d5d09236"
+            ]
+        ]
+    },
+    {
+        "id": "b1da50fec4dc7613",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_saida_blueair",
+        "payloadType": "global",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "1d20db43514680a0"
+            ]
+        ]
+    },
+    {
+        "id": "1bd10a85c799b8f2",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "press_ar_blueair",
+        "payloadType": "global",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "3fc13f18e7be962e"
+            ]
+        ]
+    },
+    {
+        "id": "59c2aed5f0656e32",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_termoregulador_st01",
+        "payloadType": "global",
+        "x": 180,
+        "y": 280,
+        "wires": [
+            [
+                "ca517767d2145d30"
+            ]
+        ]
+    },
+    {
+        "id": "c189552a045f5515",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "press_bomba_vacuo_st01",
+        "payloadType": "global",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "77763d4a73f9561a"
+            ]
+        ]
+    },
+    {
+        "id": "ea9a64a3d16201e2",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_termoregulador_st02",
+        "payloadType": "global",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "17a7466dda480262"
+            ]
+        ]
+    },
+    {
+        "id": "d42aae0c53d0eb2a",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "press_bomba_vacuo_st02",
+        "payloadType": "global",
+        "x": 180,
+        "y": 460,
+        "wires": [
+            [
+                "cb7b90fcd22d0971"
+            ]
+        ]
+    },
+    {
+        "id": "e5d122eb76b09281",
+        "type": "inject",
+        "z": "d4f554bfbd91ecd9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "66ed221a4f6dbec7",
+                "65a149ee343bd7bb"
+            ]
+        ]
+    },
+    {
+        "id": "66a62d317d442e72",
+        "type": "ui-chart",
+        "z": "d4f554bfbd91ecd9",
+        "group": "066c896857f20e37",
+        "name": "",
+        "label": "ENTRADA vs SAIDA DE AGUA DE REFRIGERAÇÂO GERAL",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisLabel": "",
+        "yAxisProperty": "",
+        "ymin": "0",
+        "ymax": "100",
+        "action": "append",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 790,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66ed221a4f6dbec7",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 14",
+        "func": "\n\nvar temp_ent_aux = global.get(\"temp_entrada_agua_chiller\")\nvar temp_saida_aux = global.get(\"temp_saida_agua_chiller\")\n\nmsg = {\n    \"topic\": \"Temp_entrada\",\n    \"payload\": temp_ent_aux \n}\n\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "66a62d317d442e72"
+            ]
+        ]
+    },
+    {
+        "id": "815587f36af86cca",
+        "type": "ui-button",
+        "z": "d4f554bfbd91ecd9",
+        "group": "066c896857f20e37",
+        "name": "",
+        "label": "button",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mdi-delete-restore",
+        "iconPosition": "left",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "payload",
+        "topicType": "msg",
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "66a62d317d442e72"
+            ]
+        ]
+    },
+    {
+        "id": "65a149ee343bd7bb",
+        "type": "function",
+        "z": "d4f554bfbd91ecd9",
+        "name": "function 15",
+        "func": "\n\n\nvar temp_saida_aux = global.get(\"temp_saida_agua_chiller\")\n\nmsg = {\n    \"topic\": \"Temp_saida\",\n    \"payload\": temp_saida_aux\n\n}\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "66a62d317d442e72"
+            ]
+        ]
+    }
+]
